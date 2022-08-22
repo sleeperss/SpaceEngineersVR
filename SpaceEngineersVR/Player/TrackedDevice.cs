@@ -17,6 +17,12 @@ public class TrackedDevice
 
         public Vector3 velocity;
         public Vector3 angularVelocity;
+
+        public Pose(Vector3 velocity, Vector3 angularVelocity)
+        {
+            this.velocity = velocity;
+            this.angularVelocity = angularVelocity;
+        }
     }
     public Pose renderPose = new();
     public Pose pose = new();
